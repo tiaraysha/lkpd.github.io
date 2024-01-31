@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 5</title>
+</head>
+<body>
+    
+    <script>
+
+        // no 1
+        let a = 1;
+        while(a <= 50){
+            console.log(a);
+            a++
+        }
+
+        // no 2
+        let z = 1;
+        while(z <= 50){
+        if( z % 2 != 0) {
+            console.log(`${z} adalah bilangan ganjil`)
+    
+        } z++
+    }
+
+        // no 3
+        let y = 1;
+        while(y <= 50){
+        if( y % 2 == 0) {
+            console.log(`${y} adalah bilangan genap`)
+        }y++
+    }
+
+        // no 4
+        let t = 1;
+        while(t <= 50) {
+        if (t % 2 == 0) {
+            console.log(`${t} adalah bilangan genap`)
+        } else{
+            console.log(`${t} adalah bilangan ganjil`)
+        }
+        t++
+    }
+
+        // no 5
+        let total = 0;
+        let bilanganTerbesar = -Infinity;
+        let bilanganTerkecil = Infinity;
+        let i = 1;
+
+        while (i <= 20) {
+            let bilangan = parseInt(prompt("Masukkan bilangan ke- ", ));
+
+            if (isNaN(bilangan)) {
+                console.log("Input bukan angka. Coba lagi.");
+            } else {
+                total += bilangan;
+
+                if (bilangan > bilanganTerbesar) {
+                    bilanganTerbesar = bilangan;
+                }
+                if (bilangan < bilanganTerkecil) {
+                    bilanganTerkecil = bilangan;
+                } 
+                i++;
+            }
+        }
+
+        let ratarata = total / 20;
+
+        console.log("Bilangan Terbesar: ", bilanganTerbesar);
+        console.log("Bilangan Terkecil: ", bilanganTerkecil);
+        console.log("Rata-rata: ", ratarata);
+
+    </script>
+    
+</body>
+</html>

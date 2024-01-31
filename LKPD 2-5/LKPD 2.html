@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 2
+        
+    </title>
+</head>
+<body>
+
+    <script>
+
+        // no1
+        let nama = "haechan";
+        let gajipokok = 300000;
+        let tunj = 20/100 * gajipokok;
+        let pjk = 15/100 * gajipokok + tunj;
+        let gajibersih = gajipokok + tunj - pjk;
+
+        console.log( 
+            `Nama karyawan ${nama}
+            Tunjangan ${tunj}
+            Pajak ${pjk}
+            Gaji bersih ${gajibersih}`
+            )
+
+
+        // no2
+        let jam = 1;
+        let menit = 30;
+        let detik = 40;
+
+        let totaldetik = ( jam * 3600) + ( menit * 60 + detik);
+        console.log(`Total detiknya adalah ${totaldetik}`);
+
+        // no3
+       let detiknya = 5440;
+
+       let JAM = Math.floor(detiknya / 3600); 
+       let sisadetik = detiknya % 3600;
+       let MENIT = Math.floor (sisadetik / 60);
+       let DETIK = sisadetik % 60;
+
+       console.log (` ${JAM} jam ${ MENIT} menit ${DETIK} detik` )
+
+    
+
+    </script>
+    
+</body>
+</html>

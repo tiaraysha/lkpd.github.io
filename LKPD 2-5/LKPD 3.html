@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 3</title>
+</head>
+<body>
+
+    <script>
+
+        // no 1
+        let berat = 2000;
+        let harga = 5000;
+
+        let total = berat / 1000 * harga;
+        let diskon = total * 5/100;
+        let bayar = total - diskon;
+        console.log(`Total harga sebelum diskon adalah ${total}
+        Total diskonnya adalah ${diskon}
+        Harga setelah diskon adalah ${bayar}`)
+
+        // no2
+        let bilangan = prompt("Masukkan Bilangan Bulat");
+
+        let inbilangan = parseInt (bilangan);
+        let satuan = bilangan % 10;
+        let puluhan = Math.floor ((bilangan /10) % 10);
+        let ratusan = Math.floor ((bilangan / 100) % 10);
+
+        console.log(
+            `${ratusan} ratusan ${puluhan} puluhan ${satuan} satuan`
+        )
+
+
+        // no3
+        let suhu =prompt("Masukkan Suhu dalam Fahrenheit");
+        let tempt = (suhu - 32) * 5/9;
+
+        if(tempt > 300) {
+            console.log("Panas")
+        } else if( tempt < 250 ) {
+            console.log("Dingin")
+        } else {
+            console.log("Normal")
+        }
+
+    </script>
+</body>
+</html> 
